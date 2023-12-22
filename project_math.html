@@ -1,0 +1,211 @@
+<!DOCTYPE HTML>
+<!--
+	Escape Velocity by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>math Projects</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+            <section id="header" class="wrapper">
+
+                <!-- Logo -->
+                    <div id="logo">
+                        <h1><a href="index.html">Math Projects</a></h1>
+                        <p>a fun exploration of math</p>
+                    </div>
+
+                <!-- Nav -->
+                    <nav id="nav">
+                        <ul>
+                            <li class="current"><a href="index.html">Home</a></li>
+                            <li>
+                                <a href="project.html">Projects</a>
+                                <ul id="nav">
+                                    <li class="link"><a href="Server.html">Server</a></li>
+                                    <li class="link"><a href="#">Math Projects</a></li>
+                                    <!-- <li class="link"><a href="#">software engineering: web application</a></li> -->
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+
+            </section>
+
+			<!-- Main -->
+				<div id="main" class="wrapper style2">
+					<div class="title">collatz conjecture</div>
+					<div class="container">
+						<!-- Content -->
+							<div id="content">
+								<article class="box post">
+									<section>
+										<h2>why?</h2>
+										<p class="style1">I had gotten an interest in math as I began at FIU. A major part of this was Numberphile: a relatively small youtube channel that makes amazing math videos and works to visualize different forms of math. Oftentimes the videos are meant to be funny and witty, with an emphasis on complex and diverse math problems. But 2 particular videos had caught my eye, both on the Collatz conjecture. One video meant to serve as an introductory for the Collatz conjecture,  explaining the already simple problem and the complications this problem brings. The other video serves as a more visual approach to the problem, emphasizing the structure of the general problem, and its inherent tree-like form.</p>
+									</section>
+									<div class="video">
+										<iframe allowfullscreen="true" height="250"width="500"src="https://www.youtube.com/embed/5mFpVDpKX70"></iframe>
+										<iframe allowfullscreen="true" height="250"width="500"src="https://www.youtube.com/embed/LqKpkdRRLZw" frameborder="0"></iframe>
+									</div>
+									<br>
+									<div class="Analyzing">
+										<h2>Analyzing</h2>
+										<div id="image" class="image">
+											<img src="images/collatz.png" alt="" />
+											<figcaption>graph of individual sequences for every number less than 175 in the set of natural numbers</figcaption>
+										</div>
+										<p>In order to best analyze the Collatz conjecture, I used various python libraries like matplotlib, pandas, and numpy to develop a sort of rough database, to best get a feel for the problem, and to be able to analyze the conjecture better. I initially stored 3 variables, a value meant to be the starting point of the conjecture, the sequence of numbers the conjecture follows until 1 is reached, and the length of the sequences. All of this would allow me to see a primitive view of the tree-like structure of the conjecture. </p>
+										<div id="image" class="image">
+											<img src="images/collatz_1.png" alt="" />
+											<figcaption>graph of sequence lengths for sequences for every number less than 1024 in the set of natural numbers</figcaption>
+										</div>
+										<p>What I found was interesting, you could clearly see that as the depth of the tree increased, more and more leaves were present. Another interesting thing I found was that numbers near each other, oftentimes have equal depths, (for example 484,485,and 486 have a depth of 98). Another interesting thing about numbers relative to each other, they tend to have similar sequences with small differences between each other, (for example 484, 485, and 486 each go 6 iterations into the algorithm before reaching 274, and then being in perfect sync with each other).</p>
+										<br>
+									</div>
+								</article>
+							</div>
+					</div>
+				</div>
+                <div id="main" class="wrapper style2">
+					<div class="title">Smaller Projects</div>
+					<div class="container">
+						<!-- Content -->
+							<div id="content">
+								<article class="box post">
+									<h2>polar prime plot</h2>
+									<div id="image" class="polarPrime">
+										<img src="images/prime1024.png" alt="" />
+										<figcaption>polar plot of all prime numbers less than 1024 in the set of natural numbers</figcaption>
+									</div>
+									<p>Using matplotlib, I made a small representation of the prime number in polar coordinates. For all prime numbers (p) in the set of natural numbers (p,p) is its respective coordinate in the graphical plane. The result was a beautiful interpretation of prime numbers, a rough view of multiplicity with respects to prime numbers.</p>
+									<div class ="image">
+										<img src="images/prime32768.png" alt="" />
+										<figcaption>polar plot of all prime numbers less than 32768 in the set of natural numbers</figcaption>
+									</div>
+								</article>
+							</div>
+					</div>
+				</div>
+
+			<!-- Highlights -->
+				<section id="highlights" class="wrapper style3">
+					<div class="title">Other Projects</div>
+					<div class="container">
+						<div class="row aln-center">
+							<div class="col-4 col-12-medium">
+								<section class="highlight">
+									<a href="#" class="image featured"><img src="images/server.jpg" alt="" /></a>
+									<h3><a href="Server.html">Server</a></h3>
+									<p>a self built Home office linux server, with a dedicated virtual kea dhcp server</p>
+									<ul class="actions">
+										<li><a href="#" class="button style1">Learn More</a></li>
+									</ul>
+								</section>
+							</div>
+							<!-- <div class="col-4 col-12-medium">
+								<section class="highlight">
+									<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+									<h3><a href="#">Nisl adipiscing sed lorem</a></h3>
+									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
+									<ul class="actions">
+										<li><a href="#" class="button style1">Learn More</a></li>
+									</ul>
+								</section>
+							</div> -->
+							<!-- <div class="col-4 col-12-medium">
+								<section class="highlight">
+									<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+									<h3><a href="#">Mattis tempus lorem</a></h3>
+									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
+									<ul class="actions">
+										<li><a href="#" class="button style1">Learn More</a></li>
+									</ul>
+								</section>
+							</div> -->
+						</div>
+					</div>
+				</section>
+
+			<!-- Footer -->
+			<section id="footer" class="wrapper">
+				<div class="title">Contact me</div>
+				<div class="container">
+					<header class="style1">
+						<h2>would like to reach out?</h2>
+						<p>
+							feel free to send an email or contact me.
+						</p>
+					</header>
+				
+						<div class="col-6 col-12-medium">
+
+							<!-- Contact -->
+							<section id="footer" class="wrapper">
+								<div class="title">Contact me</div>
+								<div class="container">
+									<header class="style1">
+										<h2>would like to reach out?</h2>
+										<p>
+											feel free to send an email or contact me.
+										</p>
+									</header>
+								
+										<div class="col-6 col-12-medium">
+			
+											<!-- Contact -->
+											<section class="feature-list small">
+												<div class="row">
+													<!-- <div class="col-6 col-12-small">
+													</div> -->
+													<div class="col-6 col-12-small">
+														<section>
+															<h3 class="icon solid fa-comment">Social</h3>
+															<p>
+																<label id="label" for="linkedin">linkedin: <a id="https://www.linkedin.com/in/daniel-hernandez-10203b24a">linkedin.com/danielhernandez</a></label><br />
+															</p>
+														</section>
+													</div>
+													<div class="col-6 col-12-small">
+														<section>
+															<h3 class="icon solid fa-envelope">Email</h3>
+															<p>
+																<label id="label" for="Email"><a id="Email"href="mailto: hernandezdaniel1702@gmail.com">hernandezdaniel1702@gmail.com</a></label>
+															</p>
+														</section>
+													</div>
+													<div class="col-6 col-12-small">
+														<section>
+															<h3 class="icon solid fa-phone">Phone</h3>
+															<p>
+																786-470-6649
+															</p>
+														</section>
+													</div>
+												</div>
+											</section>
+						</div>
+					</div>
+					<br>
+				</div>
+			</section>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

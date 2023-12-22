@@ -1,0 +1,212 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Server</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="right-sidebar is-preload">
+		<div id="page-wrapper">
+            <!-- Header -->
+			<section id="header" class="wrapper">
+                <!-- Logo -->
+                <div id="logo">
+                    <h1><a href="Server.html">My Server</a></h1>
+                    <p>a Home office linux server</p>
+                </div>
+
+                <!-- Nav -->
+                <nav id="nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li class="current">
+                            <a href="project.html">Projects</a>
+                            <ul id="nav">
+                                <li><a href="Server.html">Server</a></li>
+                                <li><a href="project_math.html">math Projects</a></li>
+                                <!--<li><a href="#">software engineering: web application</a></li> -->
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+            <section id="main" class="wrapper style2">
+                <div class="title">why a server?</div>
+                <div class="container">
+                    <article class="box post">
+                        <p>My family owned a home computer when I was younger, but by the time I was 11 the computer was gone. We were unable to keep the computer so it was sold. In its place I was given a laptop in order to do my school work. At this point I would have never imagined I would have built, and set up my own server, let alone known what a server was. To me computers and the internet was just a place held up by magic and the idea that "it just was". I was so naive.</p>
+                        <header class="style2">
+                            <h2>school</h2>
+                        </header>
+                        <p>
+                            When I first started at FIU, I had come out of highschool taking notes in notebooks, and having a bunch of folders and binders that weighed down my bookbag. One day I had gotten the chance to try out an iPad Air that a friend had, and I had enjoyed the sleekness, the compactibility, and the possibilities for written notes. The iPad was expensive at the time for me, and although I had been working for quite awhile and had been saving money for some time, I had been hacked down a bit by the purchase of a new laptop after the one I had been previously using was not receiving packets any more. But the idea of the iPad was stuck in my head, for months I contemplated the purchase. Eventually I settled my mind, by this point I had more than enough for the iPad and decided to buy it. Right at the moment of purchase I had begun thinking about storage for my notes, how would I store everything? The iPad will eventually run out of space! So, I began researching solutions. I came upon many options from consumer NAS options to commercial NAS, but I settled on a bigger goal, one that would take longer to complete, and would require a lot of learning on my part. 
+                        </p>
+                        <header class="style2">
+                            <h2>Learning expierence</h2>
+                        </header>
+                        <p>When I first did research on storage for my iPad and most importantly my notes, I had already known about virtual machines and the capabilities that they are able to provide.t I had not done anything, but I came across multiple solutions for what I wanted, commercial and consumer grade NAS, yet none really interested me. Then my research led to building a NAS, and I became enamored with the idea: a whole machine built and set up by just me.</p>
+                        <p>when I first decided to build the server. I was inexperienced and had an idealized view of the whole process. During the whole process I learned a lot about systems and networking, so much so that when I took my computer networking class at FIU I had already read and dipped my hands into some of the concepts taught in class, making the class experience a lot better and more comfortable.</p>      
+                    </article>
+                </div>
+            </section>
+            <section id="main" class="wrapper style2">
+                <div class="title">building the server</div>
+                <div class="container">
+                    <div class="row gtr-150">
+                        <div>
+                            <div id="content">
+                                <article class="box post">
+                                    <p>I had never built a computer before building the server; I had taken them apart, but never constructed one. I had ideas for the server and I had learned about virtual machines previously during a summer in between my classes. I had known they were useful, but had no real use for them at the time. However, the possibilities were different with a server. I didn't like the idea of just grabbing an assortment of parts, mixing and matching them to get the machine I wanted. I wanted something efficient, powerful, and easily maintainable enough to run the things I wanted and leave room for expansion if the need ever came across.</p>
+                                    <header>
+                                        <h2>constructing and setup</h2>
+                                        <p>The server was fairly easy to build once the necessary parts were obtained. I had a blast building it. Every part was very carefully mounted, when the machine had its first POST, I was screaming for joy, all the parts were working, everything was in order. Now begins set up, I wanted an operating system that allowed me free control over all aspects of the machine and would not be as resource intensive as MACOS or Windows.I decided to go with a Linux operating system specifically Ubuntu, due to its user-friendly features, easy accessibility to different features of the system. I installed Ubuntu onto one of the SSD drives I had bought for the server, this allowed for the server to have a faster boot than if it was on a hard drive.</p>
+                                        <p>Once the operating system was complete, I had some pressing matters due to the components I had. Both my GPU and cooling system had special drivers that were needed in order to run the components properly. Because I had installed an ARCA770 as my GPU, it was fairly easy to set up. I had found, through Microsoft's support page, an installation guide for the A770 drivers made specifically for Linux. This made the whole process much easier. The cooling system on the other hand was slightly more difficult; the application that was needed to configure the system was only available on Windows, and the application would not properly work on a virtual machine. I had to grab a separate SSDI had, install Windows onto it and dual boot the machine to Windows. Once in Windows I installed the application onto the SSD, and installed the necessary drivers and configured it to my liking. In addition, I would install KVM onto the machine as it allowed me to run virtual machines from within Linux.</p>
+                                        <h2>Failures and setbacks</h2>
+                                        <p>Building the server was no easy task for me, with failures mostly happening due to my inexperience and limited knowledge. But throughout the whole process, and through every dead end, I continued because I saw the benefits and I saw that I was slowly but surely learning, so I pressed on fixing any mistakes made along the way.</p>
+                                        <p>When first building the machine I was confronted with the compatibility issues between the GPU and motherboard. For an entire day I struggled trying to figure out why the machine would not POST. I looked at the lights the machine was flashing and it was giving me a GPU error, and I became worried, was the GPU bad? Well, it was not. After a long research session, I figured out that the GPU and motherboard were incompatible. I was very mad at myself, how could I have not realized this would happen, but still I never let it stop me I continued. I decided to buy a new motherboard and CPU, the more expensive option between the choices I had but I really wanted the ARC A770 and I was willing to go through the trouble and expenses in order to keep it. So after a little research I found the compatible GPUs and CPUs, bought them, grabbed the incompatible motherboard and CPU and sold them as I had no real use for them, and I wanted back some of the money I had lost.</p>
+                                    </header>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="main" class = "wrapper style2">
+                <div class="title"> Additionals</div>
+                <div class="container">
+                    <div class="content">
+                        <article class="bost post">
+                            <p>By this point the machine was fully built and operating, but now started the real work. I had plans for the machine, big plans, the whole building process gave me many more ideas than what I could want. So using the last SSD I bought, I would use it to store all my virtual machines.</p>
+                            <ul id="textList">
+                                <li>
+                                    <h3>virtual switch</h3>
+                                    <p>Since I installed KVM, I wanted to be able to connect the virtual machines to the same network. I first tried Open vSwitch, but I found it difficult and more complex than what I expected. Therefore, I went with an alternative. Ubuntu has its own switch capabilities, and after installing the proper library I was able to configure the virtual switches.</p>
+                                </li>
+                                <li>
+                                    <h3>DHCP</h3>
+                                    <p>Now that I had my virtual machines bridged together I wanted to give them an IP, but I was also lazy and didn’t want to manually configure IPs, so I installed kea DHCP, as my DHCPserver. Using it, I created a database for all the physical and virtual machines that were on my virtual network.</p>
+                                </li>
+                                <li>
+                                    <h3>NAS</h3>
+                                    <p>The initial reason for the server, I wanted a NAS to store my notes and my projects. I decided to use TRUENAS, an operating system built upon the ZFS file system. I installed it onto a virtual machine, and mounted 2 WD red hard drives I had bought to the virtual machine. I configured the TRUENAS to use one of the hard drives as backup and the other for actual use. Although this is a slightly redundant set up, it allowed me to securely store my files onto hard drives and have an extra with the exact same information ready for use as well, if anything would happen to the first drive.</p>
+                                </li>
+                                <li>
+                                    <h3>Future Additionals</h3>
+                                    <p>The server will always be a work in progress, and honestly I don’t think I will ever not find something to do to it. Currently my plans are simple, due time having a DHCP server and NAS server running, I decided to set up a virtual router. Why? Well, I wanted the servers to be accessible to my other devices and connected to my main network. After some research and some initial setbacks I decided to use opensense, a powerful firewall operating system that has capabilities for VPNS, subnets, and more. Although currently the opensense router is not yet completely setup, progress is always being made.</p>
+                                </li>
+                            </ul>
+                            <h2>overview</h2>
+                            <p>Things don’t always go as planned, even to this point, I learned so much yet I still failed along the way and each new setback gave me time to explore more and learn more of the software and the components that were required for the system that I wanted. I developed my skills as a programmer and learned new skills in systems and networking.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section id="highlights" class="wrapper style3">
+                <div class="title">Other Projects</div>
+                <div class="container">
+                    <div class="row aln-center">
+                        <div class="col-4 col-12-medium">
+							<section class="highlight">
+								<a href="#" class="fit image featured"><img src="images/collatz.png" alt="" /></a>
+								<h3><a href="#">Math Projects</a></h3>
+								<p>projects and analysis, exploring different math concepts i find intresting</p>
+								<ul class="actions">
+									<li><a href="#" class="button style1">Learn More</a></li>
+								</ul>
+							</section>
+						</div>
+                        <!-- <div class="col-4 col-12-medium">
+                            <section class="highlight">
+                                <a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+                                <h3><a href="#">Nisl adipiscing sed lorem</a></h3>
+                                <p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
+                                <ul class="actions">
+                                    <li><a href="#" class="button style1">Learn More</a></li>
+                                </ul>
+                            </section>
+                        </div>
+                        <div class="col-4 col-12-medium">
+                            <section class="highlight">
+                                <a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+                                <h3><a href="#">Mattis tempus lorem</a></h3>
+                                <p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
+                                <ul class="actions">
+                                    <li><a href="#" class="button style1">Learn More</a></li>
+                                </ul>
+                            </section>
+                        </div> -->
+                    </div>
+                </div>
+            </section>
+            <section id="footer" class="wrapper">
+                <div class="title">Contact me</div>
+                <div class="container">
+                    <header class="style1">
+                        <h2>would like to reach out?</h2>
+                        <p>
+                            feel free to send an email or contact me.
+                        </p>
+                    </header>
+                
+                        <div class="col-6 col-12-medium">
+
+                            <!-- Contact -->
+                            <section id="footer" class="wrapper">
+                                <div class="title">Contact me</div>
+                                <div class="container">
+                                    <header class="style1">
+                                        <h2>would like to reach out?</h2>
+                                        <p>
+                                            feel free to send an email or contact me.
+                                        </p>
+                                    </header>
+                                
+                                        <div class="col-6 col-12-medium">
+            
+                                            <!-- Contact -->
+                                            <section class="feature-list small">
+                                                <div class="row">
+                                                    <!-- <div class="col-6 col-12-small">
+                                                    </div> -->
+                                                    <div class="col-6 col-12-small">
+                                                        <section>
+                                                            <h3 class="icon solid fa-comment">Social</h3>
+                                                            <p>
+                                                                <label id="label" for="linkedin">linkedin: <a id="https://www.linkedin.com/in/daniel-hernandez-10203b24a">linkedin.com/danielhernandez</a></label><br />
+                                                            </p>
+                                                        </section>
+                                                    </div>
+                                                    <div class="col-6 col-12-small">
+                                                        <section>
+                                                            <h3 class="icon solid fa-envelope">Email</h3>
+                                                            <p>
+                                                                <label id="label" for="Email"><a id="Email"href="mailto: hernandezdaniel1702@gmail.com">hernandezdaniel1702@gmail.com</a></label>
+                                                            </p>
+                                                        </section>
+                                                    </div>
+                                                    <div class="col-6 col-12-small">
+                                                        <section>
+                                                            <h3 class="icon solid fa-phone">Phone</h3>
+                                                            <p>
+                                                                786-470-6649
+                                                            </p>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                            </section>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </section>
+        </div>
+        <!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+    </body>
+</html>
