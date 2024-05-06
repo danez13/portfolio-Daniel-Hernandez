@@ -1593,11 +1593,13 @@ input, select, textarea {
 		.image img {
 			display: block;
 			width: 100%;
+			height: 100%;
 		}
 
 		.image.fit {
 			display: block;
 			width: 100%;
+			height: 100%;
 		}
 
 		.image.left {
@@ -1613,11 +1615,13 @@ input, select, textarea {
 			.image.centered img {
 				margin: 0 auto;
 				width: auto;
+				height: auto;
 			}
 
 		.image.featured {
 			display: block;
 			width: 100%;
+			height: 100%;
 			margin: 0 0 2em 0;
 		}
 
@@ -3052,9 +3056,9 @@ figcaption{
 .polarPrime{
 	float:right;
 }
-#snakeFirst{
+#rightFloat{
 	float:right;
 }
-#snakeThird{
-	float:right;
+#leftFloat{
+	float:left;
 }
