@@ -3041,9 +3041,9 @@ input, select, textarea {
 	/* float:right */
 
 }
-.Analyzing{
-	/* display: flex; */
-}
+/* .Analyzing{
+	display: flex;
+	} */
 .Analyzing > #image{
 	float: right;
 }
