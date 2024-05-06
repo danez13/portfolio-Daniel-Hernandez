@@ -3035,10 +3035,11 @@ input, select, textarea {
 }
 /* GPU */
 .video{
-	display: flex;
-	justify-content: space-around;
-	/* flex-direction: column; */
-	/* float:right */
+	display:inline;
+	/* display: flex; */
+	/* justify-content: space-around; */
+	/* flex-direction: column;
+	float:right */
 
 }
 /* .Analyzing{
