@@ -3036,11 +3036,15 @@ input, select, textarea {
 /* GPU */
 .video{
 	display:inline;
+	width:auto;
 	/* display: flex; */
 	/* justify-content: space-around; */
 	/* flex-direction: column;
 	float:right */
 
+}
+.video>iframe{
+	width:100%;
 }
 /* .Analyzing{
 	display: flex;
