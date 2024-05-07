@@ -3035,16 +3035,23 @@ input, select, textarea {
 }
 /* GPU */
 .video{
-	display:inline;
-	width:auto;
-	/* display: flex; */
-	/* justify-content: space-around; */
+	display:inline-flex;
+	gap:50px;
+	flex-wrap: wrap;
+	/* border: black 2px solid; */
+	/* width:auto;
+	height:auto */
+	/* height: auto; */
+	/* align-content: space-around; */
+	/* justify-content:space-between; */
 	/* flex-direction: column;
 	float:right */
 
 }
 .video>iframe{
-	width:100%;
+	min-width:inherit;
+	/* width:100%;
+	height: auto; */
 }
 /* .Analyzing{
 	display: flex;
